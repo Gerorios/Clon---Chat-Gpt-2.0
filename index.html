@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat Gpt</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <main>
+        <ul>
+            <li class="bot mensaje">
+                <span id="span-bot"> GPT</span>
+            <p>Este es un mensaje del chat</p>
+            </li>
+        </ul>
+    </main>
+    <form>
+        <input type="text" placeholder="Escribe tu mensaje aqui" required id="mensaje-chat">
+        <button> Enviar</button>
+    </form>
+
+    <small>&nbsp;</small>
+
+    <template id="mensaje-template">
+        <li class="mensaje">
+            <span>Yo</span>
+            <p>Este es un mensaje del usuario</p>
+        </li>
+    </template>
+    <script type="module" src="/app.js"></script>
 </body>
 </html>

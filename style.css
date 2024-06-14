@@ -1,0 +1,117 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0;
+    display: grid;
+    place-content: center;
+    height: 100dvh;
+}
+main{
+    width: 450px;
+    max-width: 100%;
+    height: 70vh;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, a0.5);
+    padding: 8px;
+    margin-bottom: 16px;
+
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0;
+    padding: 4px 8px;
+}
+
+.bot span{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(49, 143, 215, 0.832);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 99999px;
+}
+.usuario span{
+    width: 43px;
+    height: 43px;
+    background-color: rgba(175, 245, 168);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 99999px;
+}
+li p {
+    padding: 4px 8px;
+    border-radius: 50px;
+    margin-top: 8px;
+}
+
+.usuario{
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.usuario p{
+    background-color: rgb(161, 255, 152);
+}
+.bot{
+    align-self: flex-start;
+}
+.bot p{
+    background-color: rgba(49, 143, 215, 0.832);
+}
+form{
+    display: flex;
+
+}
+form input{
+    border-radius: 999px;
+    flex-grow: 1;
+    border: 0;
+    padding: 6px 12px;
+    margin-right: 6px;
+}
+form button{
+    border-radius: 1rem;
+    background-color: rgb(78, 108, 243);
+    color: rgb(255, 255, 255);
+    padding: 4px 8px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    &[disabled]{
+        background-color: #212020;
+        opacity: 0.6;
+    }
+}
+form button:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+small{
+    font-size: 10px;
+    color: gray;
+    position: 0;
+    left: 0;
+    bottom: 10px;
+    top: 0;
+    margin: auto;
+    
+}
